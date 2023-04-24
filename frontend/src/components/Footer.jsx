@@ -56,12 +56,12 @@ const Footer = () => {
           <ul>
             <li>
               <Link href="/tyc" className=" text-white underline">
-                Términos y condiciones
+                Terminos
               </Link>
             </li>
             <li>
               <Link href="/tyc" className="text-white underline">
-                Política de privacidad
+                Privacidad
               </Link>
             </li>
           </ul>
