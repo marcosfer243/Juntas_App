@@ -1,0 +1,32 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 109271994996-lgb7i04cllhp1nlssnh9fa88759v1922.apps.googleusercontent.com
+            clientSecret: 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
+  jpa:
+    open-in-view: 'false'
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: 'true'
+    defer-datasource-initialization: 'true'
+    hibernate:
+      ddl-auto: create
+    show-sql: 'true'
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:juntas
+    driverClassName: org.h2.Driver
+    password: ''
+  h2:
+    console:
+      enabled: 'true'
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port: '8080'
+

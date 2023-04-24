@@ -1,0 +1,122 @@
+/* Profile */
+@import url("Profile-styles.css");
+
+/* Terms and conditions */
+@import url("TyC.css");
+
+
+/* Trip */
+@import url("Trip-styles.css");
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Landing */
+.traveler {
+  background-image: linear-gradient(
+      90deg,
+      rgba(97, 97, 97, 0.5) 50%,
+      rgba(59, 237, 30, 0.5) 100%
+    ),
+    url("../assets/landing/viajera.png");
+}
+
+.driver {
+  background-image: linear-gradient(
+      90deg,
+      rgba(97, 97, 97, 0.5) 50%,
+      rgba(59, 237, 30, 0.5) 100%
+    ),
+    url("../assets/landing/conductora.png");
+}
+
+.driver,
+.traveler,
+.carousel-item-1 {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-green {
+  background-color: #3bed1e;
+}
+
+.share-travel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+}
+
+.carousel-item-0 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(97, 97, 97, 0.5) 50%,
+      rgba(59, 237, 30, 0.5) 100%
+    ),
+    url("./../assets/landing/header1.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-item-1 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(97, 97, 97, 0.5) 50%,
+      rgba(59, 237, 30, 0.5) 100%
+    ),
+    url("./../assets/landing/header2.png");
+}
+
+.carousel-content {
+  margin-right: 4rem;
+  margin-top: 3rem;
+  width: 26rem;
+}
+
+/* Login */
+
+.login-image {
+  background-image: url("./../assets/auth/login-view-pic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 772px;
+}
+
+.login-form {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+/* Home */
+.driver-option {
+  background-image: linear-gradient(
+      90deg,
+      rgba(97, 97, 97, 0.5) 50%,
+      rgba(255, 58, 144, 0.5) 100%
+    ),
+    url("./../assets/home/driver.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.passenger-option {
+  background-image: linear-gradient(
+      90deg,
+      rgba(97, 97, 97, 0.5) 50%,
+      rgba(59, 237, 30, 0.5) 100%
+    ),
+    url("./../assets/home/passenger.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

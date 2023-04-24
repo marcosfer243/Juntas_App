@@ -1,0 +1,128 @@
+export const cities = [
+  { city: "Buenos Aires", coords: { lat: -34.5997, lng: -58.3819 } },
+  { city: "Córdoba", coords: { lat: -31.4167, lng: -64.1833 } },
+  { city: "Rosario", coords: { lat: -32.9575, lng: -60.6394 } },
+  { city: "Comodoro Rivadavia", coords: { lat: -45.8667, lng: -67.5 } },
+  { city: "San Miguel de Tucumán", coords: { lat: -26.8167, lng: -65.2167 } },
+  { city: "Mar del Plata", coords: { lat: -38, lng: -57.55 } },
+  { city: "Salta", coords: { lat: -24.7883, lng: -65.4106 } },
+  { city: "San Juan", coords: { lat: -31.5375, lng: -68.5364 } },
+  { city: "Lanús", coords: { lat: -34.7, lng: -58.4 } },
+  { city: "Florencio Varela", coords: { lat: -34.8167, lng: -58.2833 } },
+  { city: "Santa Fe", coords: { lat: -31.6333, lng: -60.7 } },
+  { city: "Corrientes", coords: { lat: -27.4833, lng: -58.8167 } },
+  { city: "San Salvador de Jujuy", coords: { lat: -24.1856, lng: -65.2994 } },
+  { city: "Bahía Blanca", coords: { lat: -38.7167, lng: -62.2667 } },
+  { city: "Resistencia", coords: { lat: -27.4514, lng: -58.9867 } },
+  { city: "Posadas", coords: { lat: -27.3667, lng: -55.8969 } },
+  { city: "Santiago del Estero", coords: { lat: -27.7844, lng: -64.2669 } },
+  { city: "Paraná", coords: { lat: -31.7444, lng: -60.5175 } },
+  { city: "Merlo", coords: { lat: -34.6653, lng: -58.7275 } },
+  { city: "González Catán", coords: { lat: -34.7708, lng: -58.6464 } },
+  { city: "Neuquén", coords: { lat: -38.9573, lng: -68.0455 } },
+  { city: "Quilmes", coords: { lat: -34.7167, lng: -58.2667 } },
+  { city: "Banfield", coords: { lat: -34.75, lng: -58.3833 } },
+  { city: "Formosa", coords: { lat: -26.1847, lng: -58.1758 } },
+  { city: "José C. Paz", coords: { lat: -34.5167, lng: -58.7667 } },
+  { city: "La Plata", coords: { lat: -34.9333, lng: -57.95 } },
+  { city: "Godoy Cruz", coords: { lat: -32.9167, lng: -68.8333 } },
+  { city: "Isidro Casanova", coords: { lat: -34.7, lng: -58.5833 } },
+  { city: "La Rioja", coords: { lat: -29.4131, lng: -66.8558 } },
+  { city: "Berazategui", coords: { lat: -34.7679, lng: -58.2133 } },
+  { city: "San Luis", coords: { lat: -33.2994, lng: -66.3392 } },
+  { city: "José María Ezeiza", coords: { lat: -34.8333, lng: -58.5167 } },
+  {
+    city: "San Nicolás de los Arroyos",
+    coords: { lat: -33.3333, lng: -60.2167 },
+  },
+  { city: "Catamarca", coords: { lat: -28.4686, lng: -65.7792 } },
+  { city: "Río Cuarto", coords: { lat: -33.123, lng: -64.3478 } },
+  { city: "San Miguel", coords: { lat: -34.5333, lng: -58.7167 } },
+  { city: "Concordia", coords: { lat: -31.3922, lng: -58.0169 } },
+  { city: "Rafael Castillo", coords: { lat: -34.7167, lng: -58.6167 } },
+  { city: "Florencio Varela", coords: { lat: -34.8167, lng: -58.3833 } },
+  {
+    city: "San Justo",
+    coords: { lat: -34.6833, lng: -58.55 },
+  },
+  {
+    city: "Ituzaingó",
+    coords: { lat: -34.6582, lng: -58.6672 },
+  },
+  {
+    city: "Temperley",
+    coords: { lat: -34.7667, lng: -58.3833 },
+  },
+  {
+    city: "Ramos Mejía",
+    coords: { lat: -34.65, lng: -58.5667 },
+  },
+  {
+    city: "San Martín",
+    coords: { lat: -33.0806, lng: -68.4706 },
+  },
+  {
+    city: "Tandil",
+    coords: { lat: -37.3167, lng: -59.1333 },
+  },
+  {
+    city: "Puerto Madryn",
+    coords: { lat: -42.773, lng: -65.0366 },
+  },
+  {
+    city: "Mendoza",
+    coords: { lat: -32.8833, lng: -68.8333 },
+  },
+  {
+    city: "San Carlos de Bariloche",
+    coords: { lat: -41.15, lng: -71.3 },
+  },
+  {
+    city: "Lomas de Zamora",
+    coords: { lat: -34.7667, lng: -58.4 },
+  },
+  {
+    city: "Villa Mercedes",
+    coords: { lat: -33.6667, lng: -65.4667 },
+  },
+  {
+    city: "Bernal",
+    coords: { lat: -34.7, lng: -58.2833 },
+  },
+  {
+    city: "Esteban Echeverría",
+    coords: { lat: -34.8167, lng: -58.4667 },
+  },
+  {
+    city: "Gualeguaychú",
+    coords: { lat: -33.0078, lng: -58.5111 },
+  },
+  {
+    city: "San Rafael",
+    coords: { lat: -34.6175, lng: -68.3356 },
+  },
+  {
+    city: "Castelar",
+    coords: { lat: -34.65, lng: -58.65 },
+  },
+  {
+    city: "La Banda",
+    coords: { lat: -27.7333, lng: -64.25 },
+  },
+  {
+    city: "Santa Rosa",
+    coords: { lat: -36.6203, lng: -64.2906 },
+  },
+  {
+    city: "Berisso",
+    coords: { lat: -34.8667, lng: -57.8667 },
+  },
+  {
+    city: "Libertad",
+    coords: { lat: -34.6833, lng: -58.6833 },
+  },
+  {
+    city: "Morón",
+    coords: { lat: -34.65, lng: -58.6167 },
+  },
+];

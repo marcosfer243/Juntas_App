@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --green:#3BED1E;
+    --pink:#FF3A90;
+    --dark-pink:#A00A4C;
+    --font-raleway: 'Raleway', sans-serif;
+}
+
+.choose_trip_container{
+    height: 91vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: hidden;
+    font-family: var(--font-raleway);
+    display: flex;
+    flex-direction: row;
+}
+
+.column_one{
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+
+}
+
+.column_one span{
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.list{
+width: 50%;
+}
+
+.choose_item_container{
+    margin: .9375rem;
+    margin-bottom: 1rem;
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    height: 14rem;
+    background-color: var(--pink);
+    padding-left: 1rem;
+}
+
+.column_one_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.choose_item_container .trip-container{
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.column_two_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px;
+}
+.column_one_item ul{
+    width: 60%;
+}
+
+
+.column_two_item img{
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.column_two_item span{
+    font-size: small;
+}
+
+.column_two_item button{
+    background-color:var(--green);
+    padding: 4px 18px 4px 18px;
+    border-radius: 1.25rem;
+    align-self: flex-end;
+}
+
+.column_two_item button a{
+    text-decoration:none;
+    color: black;
+}
+
+@media (max-width:800px){
+    .choose_trip_container{
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .column_one{
+        width: 100%;
+    }
+
+    .column_two{
+        width: 100%;
+    }
+}
+
+.selected_trip_container{
+    height: 91vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: hidden;
+    font-family: var(--font-raleway);
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.9375rem;
+}
+
+.selected_trip_container .container_row_one .column_one{
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+
+.selected_trip_container .container_row_one .column_one .user_info img{
+ height: 70px;
+ border-radius: 50%;
+ object-fit: cover;
+ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.selected_trip_container .container_row_one .column_one .user_info {
+    display: flex;
+  justify-content: center;
+   }
+   
+   
+
+.selected_trip_container .container_row_one .column_two{
+    width: 50%;
+}
+
+.selected_trip_container .container_row_one .column_two .available{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.selected_trip_container .container_row_two .column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--pink);
+}
+
+
+.selected_trip_container .container_row_two{
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:50rem ){
+
+    .selected_trip_container{
+        min-height:250vh;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .selected_trip_container .container_row_one .column_one{
+        width: 100%;
+    }
+    .selected_trip_container .container_row_one .column_two{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: .625rem;
+    }
+
+    
+    .selected_trip_container .container_row_one .column_two .available{
+        margin-bottom: 1.25rem;
+    }
+
+    .selected_trip_container .container_row_two{
+        flex-direction: column;
+    }
+
+    .selected_trip_container .container_row_two .column{
+        width:100%;
+    }
+
+    }
+
+    /*SEPARADOR*/
+
+.selected_trip_container button{
+    align-self: flex-end;
+    margin-right: 3rem;
+    margin-top: .9375rem;
+    padding: .3125rem 1rem 0.3125rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--green);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.selected_trip_container button a{
+    text-decoration: none;
+    color: black;
+}
+
+.passengers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.booked_trip_container{
+    height: 70%;
+    width: 90%;
+    border-radius: 1.25rem;
+    padding: 0.8rem;
+    position: relative;
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.booked_trip_container .division_one{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.booked_trip_container .division_two{
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+
+.booked_trip_container .amount{
+    width: 12.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -3.4375rem;
+    right: 30%;
+}
+
+.booked_trip_container .amount .price{
+    border-radius: 50%;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0.625rem;
+    background-color: white;
+    color: var(--dark-pink);
+    font-weight:bold;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.car_info_container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+    background-color: var(--dark-pink);
+    color: white;
+    width: 90%;
+    position: relative;
+    border-radius: 0.9375rem;
+}
+
+.car_info_container img{
+margin-left: 0.625rem;
+}
+
+.car_info_container button{
+    position: absolute;
+    right: 1px;
+    margin: 0;
+    margin-bottom: 0.2rem;
+    margin-right: 0.18rem;
+    font-size: .625rem;
+    background-color: #f3f3f3;
+    color: black;
+    font-weight: bold;
+}
+
+.booked_trip_container ul{
+    list-style-type: none;
+}
+
+
+
+.division_two::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  .division_two::-webkit-scrollbar:vertical {
+    width: 10px;
+  }
+  
+  .division_two::-webkit-scrollbar-button:increment,
+  .division_two::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  .division_two::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  
+  .division_two::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+  }
+  
+  .division_two::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  @media(max-width:50rem ){
+
+    .selected_trip_container{
+        min-height:240vh;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .selected_trip_container .container_row_one .column_one{
+        width: 100%;
+    }
+    .selected_trip_container .container_row_one .column_two{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: .625rem;
+    }
+
+    
+    .selected_trip_container .container_row_one .column_two .available{
+        margin-bottom: 1.25rem;
+    }
+
+    .selected_trip_container .container_row_two{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .selected_trip_container .container_row_two .column{
+        width:100%;
+    }
+    .booked_trip_container{
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .booked_trip_container .division_one{
+        width: 100%;
+        border-bottom: 0.02px solid gray;
+   
+    }
+
+    .booked_trip_container .division_two{
+        width: 100%;
+    }
+
+    .selected_trip_container button{
+        text-decoration: none;
+        color: black;
+        margin-right: 0;
+    }
+
+    .passengers{
+        margin-top: .9375rem;
+        width: 100%;
+    }
+
+    }
+
+    /*SEPARADOR*/
